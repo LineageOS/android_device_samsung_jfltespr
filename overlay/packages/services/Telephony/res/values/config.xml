@@ -14,7 +14,13 @@
      limitations under the License.
 -->
 
+<!-- Phone app resources that may need to be customized
+     for different hardware or product builds. -->
 <resources>
+
+    <!-- Show APN Settings for some CDMA carriers -->
+    <bool name="config_show_apn_setting_cdma">true</bool>
+
     <!-- Sprint Message Wait Indicator Quirk -->
     <bool name="sprint_mwi_quirk">true</bool>
 
