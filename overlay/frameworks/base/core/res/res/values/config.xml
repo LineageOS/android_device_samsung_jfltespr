@@ -27,4 +27,8 @@
          format is UMTS|LTE|... -->
     <string translatable="false" name="config_radio_access_family">LTE|CDMA|EVDO</string>
 
+    <string-array name="config_disabledComponents" translatable="false">
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.carrier.ActivationActivity</item>
+    </string-array>
+
 </resources>
