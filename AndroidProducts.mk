@@ -14,3 +14,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_jfltespr.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_jfltespr-eng \
+    lineage_jfltespr-userdebug
