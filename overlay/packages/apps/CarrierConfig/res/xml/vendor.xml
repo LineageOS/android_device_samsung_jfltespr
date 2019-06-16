@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <carrier_config_list>
     <carrier_config>
+        <boolean name="apn_expand_bool" value="true" />
+        <boolean name="allow_adding_apns_bool" value="true" />
+        <boolean name="world_phone_bool" value="false" />
         <boolean name="show_cdma_choices_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
     </carrier_config>
 </carrier_config_list>
