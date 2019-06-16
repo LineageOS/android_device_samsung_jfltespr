@@ -23,6 +23,9 @@ NEEDS_GPS_MSB_DISABLED := true
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
 
+# System Properties
+$(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
+
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2017-01-05
