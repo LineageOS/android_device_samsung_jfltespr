@@ -1,5 +1,5 @@
-# Copyright (C) 2011 The Android Open Source Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from jfltespr device
-$(call inherit-product, device/samsung/jfltespr/device.mk)
 
-# Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_jfltespr
-PRODUCT_DEVICE := jfltespr
+# Inherit from jfltevzw device
+$(call inherit-product, device/samsung/jfltevzw/device.mk)
+
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_jfltevzw
+PRODUCT_DEVICE := jfltevzw
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SPH-L720
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MODEL := SCH-I545
 
-# Qualcomm
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=jfltevzw \
+    TARGET_DEVICE=jfltevzw \
+    PRIVATE_BUILD_DESC="jfltevzw-user 5.0.1 LRX22C I545VRSGPL1 release-keys"
+
+BUILD_FINGERPRINT := "Verizon/jfltevzw/jfltevzw:5.0.1/LRX22C/I545VRSGPL1:user/release-keys"
