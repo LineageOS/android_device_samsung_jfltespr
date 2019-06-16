@@ -20,9 +20,8 @@ $(call inherit-product-if-exists, vendor/samsung/jfltespr/jfltespr-vendor.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-09-01
+# System Properties
+$(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
 
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
