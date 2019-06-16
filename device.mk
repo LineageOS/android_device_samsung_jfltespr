@@ -14,14 +14,21 @@
 # limitations under the License.
 #
 
+# Inherit from jf-common
+$(call inherit-product, device/samsung/jf-common/jf-common.mk)
+
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jfltespr/jfltespr-vendor.mk)
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
 
 # Disable MSB for GPS
 NEEDS_GPS_MSB_DISABLED := true
 
-## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml
 
 # System Properties
 $(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
@@ -29,6 +36,3 @@ $(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2017-01-05
-
-# Inherit from jf-common
-$(call inherit-product, device/samsung/jf-common/jf-common.mk)
