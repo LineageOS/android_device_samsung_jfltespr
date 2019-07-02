@@ -14,14 +14,18 @@
 # limitations under the License.
 #
 
-## (2) Also get non-open-source specific aspects if available
+# Inherit from jf-common
+$(call inherit-product, device/samsung/jf-common/jf-common.mk)
+
+# Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jfltespr/jfltespr-vendor.mk)
 
-## overlays
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml
 
 # System Properties
 $(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
-
-# Inherit from jf-common
-$(call inherit-product, device/samsung/jf-common/jf-common.mk)
