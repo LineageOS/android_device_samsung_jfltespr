@@ -20,7 +20,7 @@
 -include vendor/samsung/jfltespr/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jfltespr,jflte
+TARGET_OTA_ASSERT_DEVICE := jflte,jfltecri,jfltecsp,jfltespr,jflteusc
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := jf_spr_defconfig
