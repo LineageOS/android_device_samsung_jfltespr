@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2decb65f_50c10c06",
+        "filename": "lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2019-07-02T18:24:48Z",
+      "side": 1,
+      "message": "What\u0027s this? :)",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 40
+      },
+      "revId": "b4e47b94718c99729b5b7b3013513b528e7d6851",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
