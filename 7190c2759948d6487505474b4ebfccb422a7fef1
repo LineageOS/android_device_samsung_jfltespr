@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7b8969_05780853",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2019-08-10T17:23:37Z",
+      "side": 0,
+      "message": "thats probably the reasons builds are failing",
+      "range": {
+        "startLine": 30,
+        "startChar": 39,
+        "endLine": 30,
+        "endChar": 47
+      },
+      "revId": "7190c2759948d6487505474b4ebfccb422a7fef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
