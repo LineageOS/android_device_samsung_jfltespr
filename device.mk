@@ -27,4 +27,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml
 
 # System Properties
-$(call inherit-product, device/samsung/jfltevzw/system_prop.mk)
+$(call inherit-product, device/samsung/jfltespr/system_prop.mk)
