@@ -1,4 +1,4 @@
-# Device configuration for Galaxy S4 (Verizon)
+# Device configuration for Galaxy S4 (Sprint)
 
 ## Spec Sheet
 
