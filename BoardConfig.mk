@@ -24,6 +24,3 @@ TARGET_OTA_ASSERT_DEVICE := jfltecri,jfltecsp,jfltespr,jflteusc
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := jf_spr_defconfig
-
-# Manifest
-DEVICE_MANIFEST_FILE += device/samsung/jfltespr/manifest.xml
