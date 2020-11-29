@@ -1,4 +1,4 @@
-# Add device specific blobs here
+## Unelss otherwise stated, all blobs are extracted from L720VPSGPL1_L720SPTGPL1_SPR
 
 # Audio
 vendor/lib/libacdbloader.so
